@@ -1,0 +1,29 @@
+import logo from "../images/landmark-logo.png";
+
+export default function Entry(props) {
+  return (
+    <section className="journal">
+      <div className="entry">
+        <div className="picture-container">
+          <img src={props.imageUrl} alt=" " className="picture" />
+        </div>
+
+        <div className="content">
+          <div className="location-container">
+            <img src={logo} alt=" " className="landmark-icon" />
+            <h3 className="country">{props.location.toUpperCase()} </h3>
+            <a href={props.googleMapsUrl} className="googlemap">
+              View on Google Maps
+            </a>
+          </div>
+
+          <h1 className="title">{props.title}</h1>
+          <h3 className="date">
+            {props.startDate} - {props.endDate}
+          </h3>
+          <p className="description">{props.description}</p>
+        </div>
+      </div>
+    </section>
+  );
+}
