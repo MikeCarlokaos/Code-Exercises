@@ -1,0 +1,10 @@
+import globe from "../images/globe-logo.png";
+
+export default function Header() {
+  return (
+    <header className="header">
+      <img src={globe} alt="logo" className="header-logo" />
+      <h2 className="header-text">my travel journal.</h2>
+    </header>
+  );
+}
