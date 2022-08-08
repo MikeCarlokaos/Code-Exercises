@@ -1,0 +1,16 @@
+function Main() {
+  return (
+    <main>
+      <h3>About</h3>
+      <p>
+        I'm an aspiring frontend developer with an interest in making things simple and applicable in daily works. I
+        keep up with tasks in best practices and eager for new things to learn.
+      </p>
+
+      <h3>Interest</h3>
+      <p>Bookworm,Internet Troll,Manga Fanatic,Certified Otaku</p>
+    </main>
+  );
+}
+
+export default Main;
