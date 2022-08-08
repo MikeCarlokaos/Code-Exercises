@@ -1,0 +1,25 @@
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Card from "./components/Card";
+import Data from "./components/data";
+
+export default function App() {
+  const cardData = Data.map((data) => {
+    return (
+      <Card
+        key={data.id}
+        //   data={data} note: using this one must out .data after props. in Card.js  example props.data.openSpot//
+        // use one above or try spread syntax exp. below //
+
+        {...data}
+      />
+    );
+  });
+  return (
+    <div className="app">
+      <Navbar />
+      <Hero />
+      <section className="card-list">{cardData}</section>
+    </div>
+  );
+}
