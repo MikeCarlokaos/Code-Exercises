@@ -1,0 +1,18 @@
+import Header from "./component/Header";
+import Entry from "./component/Entry";
+import Data from "./component/data";
+
+function App() {
+  const journalEntry = Data.map((entry) => {
+    return <Entry {...entry} />;
+  });
+
+  return (
+    <div className="App">
+      <Header />
+      {journalEntry}
+    </div>
+  );
+}
+
+export default App;
