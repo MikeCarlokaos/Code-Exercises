@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: inter;
+  color: #2b283a;
+  font-size: 10px;
+}
+
+.App {
+  max-width: 500px;
+}
+
+/* Header */
+
+.header {
+  background-color: #f55a5a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.header-logo {
+  height: 25px;
+  margin-right: 5px;
+}
+
+.header-text {
+  color: white;
+  font-size: 15px;
+}
+
+/* Entry */
+
+.entry {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  padding: 0rem 0rem 0rem 1rem;
+}
+
+.picture {
+  height: 168px;
+  width: 125px;
+  border-radius: 5px;
+}
+
+.location-container {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.landmark-icon {
+  height: 10px;
+  width: 7px;
+}
+
+.country {
+  padding: 5px;
+  letter-spacing: 0.17em;
+}
+
+.googlemap {
+  padding: 5px;
+  color: #918e9b;
+}
+
+.title {
+  font-size: 25px;
+  margin: 0;
+}
+
+.date {
+  margin: 0;
+  margin-top: 20px;
+}
+
+.description {
+  max-width: 320px;
+  margin: 0;
+  margin-top: 10px;
+}
