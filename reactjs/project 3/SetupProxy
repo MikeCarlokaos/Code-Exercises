@@ -1,0 +1,10 @@
+import { createProxyMiddleware } from "http-proxy-middleware";
+
+export default (app) => {
+  app.use(
+    createProxyMiddleware("/get_memes", {
+      target: "http://api.imgflip.com",
+      changeOrigin: true,
+    })
+  );
+};
