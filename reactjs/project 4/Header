@@ -1,0 +1,24 @@
+import mail from "../images/Mail.png";
+import linkedin from "../images/linkedin.png";
+
+function Header() {
+  return (
+    <header>
+      <nav className="header">
+        <h1>Mike Carlo Gonzaga</h1>
+        <h3>Frontend Developer</h3>
+        <a href="*">mikecarlogonzaga.website</a>
+      </nav>
+      <div className="btn-container">
+        <button className="btn-mail">
+          <img src={mail} alt="mail" className="icon" /> Email
+        </button>
+        <button className="btn-linkedin">
+          <img src={linkedin} alt="linkedin" className="icon" /> LinkedIn
+        </button>
+      </div>
+    </header>
+  );
+}
+
+export default Header;
